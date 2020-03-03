@@ -1408,4 +1408,11 @@ snd_device_t audio_extn_get_loopback_snd_device(struct audio_device *adev,
                                                 int channel_count);
 
 void audio_get_vendor_config_path(char* config_file_path, int path_size);
+
+int audio_extn_tfa98xx_start_feedback(struct audio_device *adev,
+                                      snd_device_t snd_device);
+
+void audio_extn_tfa98xx_stop_feedback(struct audio_device *adev,
+                                      snd_device_t snd_device);
+
 #endif /* AUDIO_EXTN_H */
